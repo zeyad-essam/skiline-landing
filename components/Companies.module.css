@@ -1,0 +1,34 @@
+.companies {
+  padding: 50px 0 20px;
+  text-align: center;
+}
+
+@media (max-width: 991px) {
+  .companies {
+    padding: 25px 0;
+  }
+}
+
+.companies p {
+  margin-bottom: 10px;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 160%;
+  letter-spacing: 0.02em;
+  color: #696984;
+}
+
+.companies .image_wrapper {
+  width: 70%;
+  max-width: 900px;
+  margin: auto;
+}
+
+@media (max-width: 767px) {
+  .companies p {
+    font-size: 16px;
+  }
+  .companies .image_wrapper {
+    width: 90%;
+  }
+}

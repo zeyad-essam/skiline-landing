@@ -1,0 +1,184 @@
+.footer {
+  padding: 50px 0;
+  background-color: #252641;
+}
+
+@media (max-width: 991px) {
+  .footer {
+    padding: 25px 0;
+  }
+}
+
+.footer .footer_top {
+  max-width: 400px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+}
+
+@media (max-width: 767px) {
+  .footer .footer_top {
+    max-width: 300px;
+  }
+}
+
+.footer .footer_top > div,
+.footer .footer_top > h3 {
+  width: 50%;
+  padding: 0 30px;
+}
+
+@media (max-width: 767px) {
+  .footer .footer_top > div,
+  .footer .footer_top > h3 {
+    padding: 0 15px;
+  }
+}
+
+.footer .footer_top .logo {
+  border-right: 3px solid #626381;
+}
+
+.footer .footer_top h3 {
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 33px;
+  letter-spacing: 0.04em;
+  color: #fff;
+}
+
+@media (max-width: 767px) {
+  .footer .footer_top h3 {
+    font-weight: 500;
+    font-size: 18px;
+  }
+}
+
+.subscribe {
+  max-width: 600px;
+  margin: auto;
+  padding: 20px 0;
+}
+
+.subscribe p {
+  padding: 20px 0;
+  font-weight: 500;
+  font-size: 22px;
+  text-align: center;
+  letter-spacing: 0.04em;
+  color: #b2b3cf;
+}
+
+@media (max-width: 767px) {
+  .subscribe p {
+    font-size: 17px;
+  }
+}
+
+.subscribe form {
+  display: flex;
+  gap: 20px;
+}
+
+@media (max-width: 767px) {
+  .subscribe form {
+    gap: 10px;
+  }
+}
+
+@media (max-width: 567px) {
+  .subscribe form {
+    flex-direction: column;
+    gap: 20px;
+  }
+}
+
+.subscribe form input {
+  flex: 1;
+  padding: 15px;
+  height: 50px;
+  border: 1px solid #83839a;
+  border-radius: 50px;
+  outline: none;
+  background-color: transparent;
+  font-size: 18px;
+  color: #fff;
+}
+
+.subscribe form button {
+  width: 140px;
+  border-radius: 50px;
+  background: linear-gradient(105.5deg, #545ae7 19.57%, #393fcf 78.85%);
+  border: none;
+  outline: none;
+  font-size: 18px;
+  font-weight: 500;
+  color: #fff;
+  cursor: pointer;
+}
+
+@media (max-width: 767px) {
+  .subscribe form button {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 567px) {
+  .subscribe form button {
+    width: 100%;
+    height: 50px;
+  }
+}
+
+.footer .footer_links {
+  padding: 20px 0 20px;
+}
+
+.footer .footer_links ul {
+  display: flex;
+  justify-content: center;
+}
+
+@media (max-width: 350px) {
+  .footer .footer_links ul {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+}
+
+@media (min-width: 351px) {
+  .footer .footer_links ul li:not(:last-child) {
+    border-right: 2px solid #626381;
+  }
+}
+
+.footer .footer_links ul li a {
+  padding: 0 10px;
+  color: #b2b3cf;
+}
+
+@media (max-width: 567px) {
+  .footer .footer_links ul li a {
+    padding: 0 5px;
+    font-size: 15px;
+  }
+}
+
+.footer .footer_links ul li a:hover {
+  color: #fff;
+}
+
+.footer .copy_right {
+  text-align: center;
+  letter-spacing: 0.2px;
+  font-weight: 300;
+  font-size: 20px;
+  color: #b2b3cf;
+}
+
+@media (max-width: 567px) {
+  .footer .copy_right {
+    font-size: 16px;
+  }
+}

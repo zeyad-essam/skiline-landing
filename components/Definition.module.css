@@ -1,0 +1,221 @@
+.definition {
+  padding: 50px 0;
+}
+
+@media (max-width: 991px) {
+  .definition {
+    padding: 25px 0;
+  }
+}
+
+.definition .definition_text {
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.definition .definition_links {
+  max-width: 1000px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+  margin-bottom: 50px;
+}
+
+@media (max-width: 991px) {
+  .definition .definition_links {
+    margin-bottom: 30px;
+  }
+}
+
+@media (max-width: 767px) {
+  .definition .definition_links {
+    max-width: 600px;
+    grid-template-columns: 1fr;
+  }
+}
+
+.definition .definition_links .definition_link {
+  position: relative;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.definition .definition_links .definition_link:before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: rgba(23, 27, 65, 0.4);
+  z-index: 1;
+}
+
+.definition .definition_links .definition_link div {
+  position: absolute;
+  width: 100%;
+  top: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  transform: translateY(-50%);
+  text-align: center;
+  z-index: 10;
+  color: #fff;
+}
+
+.definition .definition_links .definition_link div h3 {
+  font-size: 18px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.definition .definition_links .definition_link div a {
+  display: block;
+  padding: 15px 25px;
+  height: 50px;
+  border-radius: 50px;
+  border: 1px solid #ffffff;
+  transition: all 0.3s ease;
+}
+
+.definition .definition_links .definition_link div a:hover {
+  background: rgba(35, 189, 238, 0.9);
+  border-color: rgba(35, 189, 238, 0.9);
+}
+
+.definition .classroom {
+  padding-top: 25px;
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
+@media (max-width: 991px) {
+  .definition .classroom {
+    flex-direction: column;
+  }
+}
+
+.definition .classroom .classroom_text {
+  width: 55%;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+@media (max-width: 991px) {
+  .definition .classroom .classroom_text {
+    width: 100%;
+    max-width: 700px;
+    text-align: center;
+  }
+}
+
+.definition .classroom .classroom_text h3 {
+  position: relative;
+  font-size: 36px;
+  font-weight: 500;
+  color: var(--secondary-color);
+  line-height: 150%;
+}
+
+@media (max-width: 1400px) {
+  .definition .classroom .classroom_text h3 {
+    font-size: 30px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .definition .classroom .classroom_text h3 {
+    font-size: 24px;
+  }
+}
+
+.definition .classroom .classroom_text h3 span {
+  color: var(--primary-color);
+}
+
+.definition .classroom .classroom_text h3:before {
+  content: url("/circle.png");
+  position: absolute;
+  z-index: -1;
+  top: -20px;
+  left: -20px;
+}
+
+@media (max-width: 991px) {
+  .definition .classroom .classroom_text h3:before {
+    display: none;
+  }
+}
+
+.definition .classroom .classroom_text p {
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 180%;
+  letter-spacing: 0.02em;
+  color: #696984;
+}
+
+@media (max-width: 1200px) {
+  .definition .classroom .classroom_text p {
+    font-size: 20px;
+  }
+}
+
+.definition .classroom .classroom_text a {
+  text-decoration-line: underline;
+  font-size: 22px;
+  color: #696984;
+}
+
+.definition .classroom .classroom_image {
+  position: relative;
+  flex: 1;
+  border-radius: 20px;
+}
+
+.definition .classroom .classroom_image::before {
+  content: url("/blue-square.png");
+  position: absolute;
+  top: -15px;
+  left: -15px;
+  z-index: -1;
+}
+
+.definition .classroom .classroom_image::after {
+  content: url("/orange-square.png");
+  position: absolute;
+  bottom: -15px;
+  right: -15px;
+  z-index: -1;
+}
+
+@media (max-width: 991px) {
+  .definition .classroom .classroom_image {
+    width: 100%;
+    max-width: 600px;
+  }
+
+  .definition .classroom .classroom_image::before,
+  .definition .classroom .classroom_image::after {
+    display: none;
+  }
+}
+
+.definition .classroom .classroom_image .play_button {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  cursor: pointer;
+}
+
+.definition .classroom .classroom_image .play_button:hover {
+  opacity: 0.8;
+}

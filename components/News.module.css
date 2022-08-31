@@ -1,0 +1,141 @@
+.news {
+  padding: 50px 0;
+}
+
+@media (max-width: 991px) {
+  .news {
+    padding: 25px 0;
+  }
+}
+
+.news .news_wrapper {
+  display: flex;
+  gap: 50px;
+}
+
+@media (max-width: 1200px) {
+  .news .news_wrapper {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.news .news_wrapper > div {
+  width: 50%;
+}
+
+@media (max-width: 1200px) {
+  .news .news_wrapper > div {
+    width: 100%;
+    max-width: 800px;
+  }
+}
+
+.news .news_wrapper .news_tag span {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  height: 25px;
+  width: fit-content;
+  padding: 0 15px;
+  font-size: 12px;
+  font-weight: 500;
+  text-transform: uppercase;
+  border-radius: 25px;
+  background-color: #f4c467;
+}
+
+.news .news_wrapper .news_main {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.news .news_wrapper .news_main h4 {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 140%;
+  color: #252641;
+}
+
+.news .news_wrapper .news_main p {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 140%;
+  letter-spacing: 0.02em;
+  color: #696984;
+}
+
+.news .news_wrapper .news_main a {
+  width: fit-content;
+  font-size: 20px;
+  letter-spacing: 0.02em;
+  text-decoration-line: underline;
+  color: #696984;
+}
+
+.news .news_wrapper .news_list .news_item {
+  margin-bottom: 20px;
+}
+
+.news .news_wrapper .news_list .news_item a {
+  display: flex;
+  gap: 20px;
+}
+
+@media (max-width: 1200px) {
+  .news .news_wrapper .news_list .news_item a {
+    align-items: flex-start;
+  }
+}
+
+.news_wrapper .news_list .news_item .image_wrapper {
+  position: relative;
+  width: 30%;
+}
+
+@media (max-width: 567px) {
+  .news_wrapper .news_list .news_item .image_wrapper {
+    width: 40%;
+  }
+}
+
+.news_wrapper .news_list .news_item .image_wrapper > div {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+}
+
+.news_wrapper .news_list .news_item .list_text {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.news_list .news_item .list_text h4 {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 140%;
+  color: #252641;
+}
+
+@media (max-width: 350px) {
+  .news_list .news_item .list_text h4 {
+    font-size: 14px;
+  }
+}
+
+.news_list .news_item .list_text p {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 140%;
+  letter-spacing: 0.02em;
+  color: #696984;
+}
+
+@media (max-width: 567px) {
+  .news_list .news_item .list_text p {
+    display: none;
+  }
+}

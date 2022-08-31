@@ -1,0 +1,128 @@
+.features {
+  padding: 50px 0;
+}
+
+@media (max-width: 991px) {
+  .features {
+    padding: 25px 0;
+  }
+}
+
+.features section {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  margin-bottom: 50px;
+}
+
+.features section > div {
+  width: 50%;
+}
+
+@media (max-width: 991px) {
+  .features section {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .features section > div {
+    width: 100%;
+    max-width: 600px;
+  }
+}
+
+.features section > div h3 {
+  color: var(--secondary-color);
+  font-size: 35px;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+  margin-bottom: 15px;
+}
+
+@media (max-width: 1200px) {
+  .features section > div h3 {
+    font-size: 27px;
+  }
+}
+
+@media (max-width: 991px) {
+  .features section > div h3 br {
+    display: none;
+  }
+}
+
+.features section > div h3 span {
+  color: var(--primary-color);
+}
+
+.features section > div > p {
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 180%;
+  color: #696984;
+  margin-bottom: 30px;
+}
+
+@media (max-width: 991px) {
+  .features section > div > p {
+    font-size: 18px;
+  }
+}
+
+.features section > div li {
+  padding: 10px 0;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.features section > div li .icon_wrapper {
+  width: 50px;
+  height: 50px;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #fbfbfb;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3);
+  border-radius: 50px;
+}
+
+.features section .image_wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.features section .image_wrapper div {
+  width: 70%;
+}
+
+@media (max-width: 991px) {
+  .features section .image_wrapper {
+    order: 2;
+  }
+
+  .features section .image_wrapper div {
+    width: 100%;
+  }
+}
+
+.features section > div li p {
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 150%;
+  letter-spacing: 0.02em;
+  color: #696984;
+  flex: 1;
+}
+
+@media (max-width: 1200px) {
+  .features section > div li p {
+    font-size: 18px;
+  }
+}
+
+.features .features_link {
+  display: flex;
+  justify-content: center;
+}
